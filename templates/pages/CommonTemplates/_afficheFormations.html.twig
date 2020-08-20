@@ -1,0 +1,12 @@
+<!--Ce bout de code affiche une formation -->
+<div class="thumbnail">
+    <img src="{{ asset(''~formation.image~'') }}" alt="image">
+    <div class="caption">
+        <h4 class="contenu">{{ formation.title }}</h4>
+        <p class="description contenu">{{ formation.description }}</p>
+        <center> {{  formation.note|rating(5)  }} </center>
+
+        <a  href="{{ path( 'formation.show',{id : formation.id ,slug : formation.slug}) }}"  class="btn btn-order contenu" role="button"><span class="glyphicon glyphicon-new-window"></span>voir page formation </a>
+    </div>
+</div>
+<!--Fin du bout de code qui affiche la formation -->

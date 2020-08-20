@@ -1,0 +1,27 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<div class="container" style="margin-top: 150px">
+    <div class="sous-titre" style="width: 60%;margin-bottom: 30px">
+        <h2 style="font-size: 50px">Toutes les catégories </h2>
+    </div>
+    <div class="row">
+        {% for categorie in categories %}
+        <div class="col-sm-4 col-md-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="contenu" style="font-size: 30px">{{ categorie.nom }}</h4>
+                    <a  href="{{ path( 'categorie.show',{id : categorie.id ,slug : categorie.slug}) }}" class="btn btn-order contenu" role="button"><span class="glyphicon glyphicon-new-window"></span>Ouvrir Catégorie</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="pagination container">
+        {{ knp_pagination_render(categories) }}
+    </div>
+</div>
+
+
+{% endblock %}

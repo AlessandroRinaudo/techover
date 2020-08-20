@@ -1,0 +1,27 @@
+<div class="container-fluid container-formation">
+    <div class="jumbotron" style="padding: 40px">
+        <h3 style="text-align: center;margin-top:10px;margin-bottom: 20px">Filtrer les formations</h3>
+        <div class="container" style="display: flex !important;justify-content: center !important;">
+            {{ form_start(form) }}
+            <div class="form-row">
+                <div class="col-md-6">
+                    {{ form_row(form.maxNote) }}
+                </div>
+                <div class="col-md-6">
+                    {{ form_row(form.maxLevel) }}
+                </div>
+                <div class="col-md-6">
+                    {#                        {{ form_row(form.langueChoisie) }}#}
+                    {{ form_row(form.langueUtilisateur) }}
+                </div>
+                <div class="col-md-6">
+                    {{ form_row(form.categoriePrefere) }}
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-warning" style="background: #337ab7;border-color:#337ab7"> Rechercher</button>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>

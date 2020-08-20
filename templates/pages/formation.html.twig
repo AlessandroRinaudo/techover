@@ -1,0 +1,25 @@
+{% block title 'Les formations' %}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!--Cette page affiche les formations -->
+    {{ include('pages/CommonTemplates/_filtreTemplate.html.twig') }}
+    <div class="container">
+        <div class="sous-titre" style="width: 60%;margin-bottom: 30px">
+            <h2 style="font-size: 50px">Toutes les formations </h2>
+        </div>
+        <div class="row" style="background-color: #f7f7f7;">
+            {% for formation in formations %}
+                <div class="col-sm-4 col-md-3">
+                    {{ include ('pages/CommonTemplates/_afficheFormations.html.twig') }}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination container">
+            {{ knp_pagination_render(formations) }}
+        </div>
+    </div>
+
+
+{% endblock %}

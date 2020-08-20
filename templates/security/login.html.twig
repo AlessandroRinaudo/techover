@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container" style="margin:150px auto;width: 50% !important;">
+        <h1 style="text-align: center;font-size: 50px;margin-bottom: 50px">Techover Admin</h1>
+        {% if error %}
+            <div class="alert alert-danger">
+                {{ error.messageKey | trans(error.messagedata,'security') }}
+            </div>
+        {% endif %}
+    <form action="{{ path('login') }}" method="post">
+        <div class="form-group">
+            <label for="username">Nom Admin</label>
+            <input placeholder="nom de l'administrateur" type="text" id="username" name="_username" class="form-control" value="{{ last_username }}">
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input  type="password" id="password" name="_password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary" id="button-admin">Se connecter</button>
+    </form>
+    </div>
+{% endblock %}

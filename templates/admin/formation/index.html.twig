@@ -1,0 +1,38 @@
+{%extends 'base.html.twig' %}
+{% block title 'Gérer les formations' %}
+{% block body  %}
+    <div class="container mt-4" style="margin: 150px auto">
+        <h1>Gérer les formations <a class="btn btn-warning" href="/logout">Logout</a></h1>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <table class="table table-stripped" >
+            <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                {% for formation in formations %}
+                <td>{{ formation.title }}</td>
+                <td>
+                    <a href="{{ path('admin.formation.edit', {id: formation.id}) }}" class="btn btn-default editerBtn">Editer</a>
+                    <form method="post" action ="{{ path ('admin.formation.delete',{id : formation.id})}}" style="display: inline-block" onsubmit="return confirm('Etes vous sur?')">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ formation.id ) }}">
+                        <button class="btn btn-danger">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+
+{% endblock %}

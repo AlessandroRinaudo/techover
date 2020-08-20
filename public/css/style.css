@@ -1,0 +1,403 @@
+
+/*Toutes les pages*/
+
+/*---------------------------------------------------------------------------------------------------------------*/
+body
+{
+  background-color: #f7f7f7;
+  font-family: 'Patua One', sans-serif,serif;
+}
+
+button.navbar-toggle
+{
+  margin-top: 25px !important;
+}
+.liens-bloques
+{
+  color: #337ab7;
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.navbar-inverse .navbar-nav>li>a
+{
+  color:#fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover
+{
+  color:#337ab7;
+}
+
+.current-bar
+{
+  color:#337ab7;
+}
+.imgLogo
+{
+  margin:20px 0;
+  margin-left: 18px !important;
+  width:180px;
+  height:50px;
+  padding:0px;
+}
+
+.barPrinci
+{
+  margin-top:15px;
+}
+
+.banner
+{
+  margin-top:90px;
+  padding-top:30px;
+  background: #D1FFFF;
+  height: 180px;
+
+}
+.bannerText
+{
+    text-align:center;
+}
+
+h2
+{
+  text-align:center;
+}
+
+.sous-titre
+{
+  margin: auto;
+  width: 40%;
+  padding: 5px;
+  border-bottom: 3px solid;
+}
+
+.sous-titre2
+{
+  padding: 10px;
+}
+
+.contenu
+{
+  text-align:center;
+}
+
+.thumbnail
+{
+  margin: 30px 10px;
+}
+
+.carousel-control 
+{
+  width: 0;
+}
+
+.btn-order
+{
+  text-align:center;
+  width:100%;
+}
+
+.btn-primary
+{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  height: 40px;
+  border-radius: 20px;
+  text-shadow: 1px 1px #292d2d;
+  padding-top: 8px;
+}
+
+
+.caption > p ,.caption h4
+{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.footer-ecrites
+{
+  color:#fff;
+}
+
+hr
+{
+  margin-top:40px !important;
+}
+
+.page-footer
+{
+  margin-top:100px;
+}
+
+.glyphicon-chevron-right ,.glyphicon-chevron-left
+{
+  color: #101010;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+/*Page Formation */
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.impagination
+{
+    width: 70%;
+    margin: 30px auto;
+}
+
+@media (min-width: 1008px)
+{
+  .impagination
+  {
+    width: 24%;
+    margin: 30px auto;
+  }
+}
+.impagination ul
+{
+    overflow: hidden;
+    background-color: #fafafa;
+    box-shadow: 0 6px 8px rgba(0,0,0,.1);
+    border-radius: 30px;
+}
+
+.impagination ul li 
+{
+    display: inline-block;
+    padding: 10px;
+    transition: .4s ;
+}
+@media (min-width: 680px)
+{
+  .impagination ul li 
+  {
+    display: inline-block;
+    padding: 15px;
+    transition: .4s ;
+  }
+}
+
+.impagination ul a 
+{
+    color: #337ab7;
+    font-weight: bold;
+    font-size:10px;
+}
+@media (min-width: 680px)
+{
+  .impagination ul a 
+  {
+    color: #337ab7;
+    font-weight: bold;
+    font-size:18px;
+  }
+}
+.impagination ul li:hover
+{
+    background-color: #e2e2e2;
+}
+
+/* Style du champs de recherche */
+form.rechercheButton input[type=text] 
+{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 85%;
+  background: #f1f1f1;
+  margin: auto;
+}
+
+/* Style du button recherche */
+form.rechercheButton button 
+{
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #337ab7;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.rechercheButton button:hover 
+{
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.rechercheButton::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Page formation */
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.contenu-formation
+{
+  text-align: justify;
+}
+.image-formation
+{
+  float: left;
+}
+
+.container-formation
+{
+  margin-top:90px;
+  padding:0;
+}
+
+.pagination
+{
+  display: flex !important;
+  justify-content: center !important;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Formulaires*/
+/*---------------------------------------------------------------------------------------------------------------*/
+#formation_description
+{
+  height: 100px;
+}
+
+.editerBtn
+{
+  background: #5eb5e0;
+  color: #fff;
+}
+
+.editerBtn:hover
+{
+  background: #3173e0;
+  color: #fff;
+}
+
+/*Page information Qui sommes-nous?*/
+
+.color-class
+{
+  background: #f7f7f7;
+}
+
+.img-information
+{
+  width: 30%;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+/*dark button*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.switch
+{
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider
+{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider
+{
+  background-color: #2196F3;
+}
+
+input:focus + .slider
+{
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before
+{
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round
+{
+  border-radius: 34px;
+}
+
+.slider.round:before
+{
+  border-radius: 50%;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Page admin*/
+
+#button-admin
+{
+  text-align: left;
+  display: inline;
+  margin: auto;
+  width: auto;
+  height: 40px;
+  border-radius:10px;
+  text-shadow: 1px 1px #292d2d;
+  padding-top: 8px;
+
+}

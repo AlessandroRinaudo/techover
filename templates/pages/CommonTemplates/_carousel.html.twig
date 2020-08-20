@@ -1,0 +1,35 @@
+<!--Ce bout de code affiche un carrousel de formations -->
+<div id="{{ nomCarousel |default('monCarousel') }}" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#{{ nomCarousel |default('monCarousel') }}" data-slide-to="0" class="active"></li>
+        <li data-target="#{{ nomCarousel |default('monCarousel') }}" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+            {% for formation in  nomVar |default(formations)  %}
+                <div class="col-md-4">
+                    {{ include ('pages/CommonTemplates/_afficheFormations.html.twig') }}
+                </div>
+            {% endfor %}
+
+
+        </div>
+
+        <div class="item ">
+            {% for formation in nomVar |default(formations) %}
+                <div class="col-md-4">
+                    {{ include ('pages/CommonTemplates/_afficheFormations.html.twig') }}
+                </div>
+            {% endfor %}
+        </div>
+
+
+
+    </div>
+
+    <a href="#{{ nomCarousel |default('monCarousel') }}" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> </a>
+    <a href="#{{ nomCarousel |default('monCarousel') }}" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span> </a>
+</div>

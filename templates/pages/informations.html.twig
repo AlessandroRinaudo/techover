@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}   
+    <div class="container" style="margin-top: 150px">
+        <div class="description px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Qui sommes-nous?</h1>
+            <p class="lead">Jidu est une start-up spécialisée dans le Machine learning et l’intelligence artificielle pour l’éducation, l’apprentissage et la formation, et souhaite accompagner l’apprenant dans une montée en compétences continue, personnalisée et qui prend en compte l’évolution de ses usages.</p>
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="container text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 color-class">
+                    <div class="card" style="width:400px">
+                        <img class="img-information" src="{{ asset('images/travailleur.png') }}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Marouene Chaibi</h4>
+                            <p class="card-text">Directeur général</br>&</br>Cofondateur de la start-up</p>
+                            <a href="#" class="btn btn-primary">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 color-class">
+                    <div class="card" style="width:400px">
+                        <img class="img-information" src="{{ asset('images/travailleur.png') }}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Fabien Mallet</h4>
+                            <p class="card-text">Directeur marketing</br>&</br>Cofondateur de la start-up</p>
+                            <a href="#" class="btn btn-primary">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 color-class">
+                    <div class="card" style="width:400px">
+                        <img class="img-information" src="{{ asset('images/travailleur.png') }}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Mthandazo Ndhlovu</h4>
+                            <p class="card-text">Directeur de la technologie</br>&</br>Cofondateur de la start-up</p>
+                            <a href="#" class="btn btn-primary">Détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <div class="contact px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h4 class="display-5>Pour nous contacter</h4>
+            <p class="lead">Vous pouvez nous contacter par téléphone au 01 23 45 67 89 ou bien par mail à l'adresse suivante techOver@techover.com</p>
+        </div>
+    </div>  
+{% endblock %}
